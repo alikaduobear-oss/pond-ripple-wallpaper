@@ -1,0 +1,36 @@
+{
+  "name": "pond-ripple-wallpaper",
+  "productName": "Pond Ripple Wallpaper",
+  "version": "1.0.0",
+  "description": "A minimal Windows desktop wallpaper: water ripples follow your cursor and spread out on click. Electron + WebGL, nothing but water.",
+  "main": "main.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --enable-logging"
+  },
+  "homepage": "https://pandyshop.top/wallpaper",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alikaduobear-oss/pond-ripple-wallpaper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alikaduobear-oss/pond-ripple-wallpaper/issues"
+  },
+  "keywords": [
+    "wallpaper",
+    "electron",
+    "webgl",
+    "water",
+    "ripple",
+    "desktop",
+    "windows"
+  ],
+  "author": "lazycat",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "electron": "^44.4.5",
+    "koffi": "^3.3.1"
+  }
+}
