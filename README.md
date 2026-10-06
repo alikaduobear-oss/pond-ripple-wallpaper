@@ -3,7 +3,18 @@
 > 桌面上只有水。鼠标划过带起一串尾迹，左键点击荡开一圈一圈向外扩散的涟漪。
 > 没有金鱼、没有螃蟹、没有菜单 —— 只有水和你的鼠标。
 
-主页：<https://pandyshop.top/wallpaper>
+## 🌐 官网
+
+**下载即用版 / 更多详情：<https://lazymeow.pages.dev/wallpaper>**
+
+| | |
+|---|---|
+| 🏠 **产品官网** | <https://lazymeow.pages.dev> |
+| 🌊 **动态桌面壁纸** | <https://lazymeow.pages.dev/wallpaper> |
+| 🐱 **懒喵桌面宠物**（配套桌宠，同一只开发者的作品） | <https://lazymeow.pages.dev/download> |
+
+> 这个仓库是**开源源码版**（自己 clone 下来跑）。如果你只想直接用，
+> 去上面官网拿打包好的版本，省掉装 Node 和 Electron 的步骤。
 
 ---
 
@@ -108,8 +119,37 @@ npx electron-builder --win --dir
 
 ## 链接
 
-- 项目主页：<https://pandyshop.top/wallpaper>
-- 问题反馈：<https://github.com/alikaduobear-oss/pond-ripple-wallpaper/issues>
+- 🌊 **动态桌面壁纸详情页**：<https://lazymeow.pages.dev/wallpaper>
+- 🏠 **产品官网**：<https://lazymeow.pages.dev>
+- 🐱 **同系列 · 懒喵桌面宠物**（开源精简版）：<https://github.com/alikaduobear-oss/lazymeow-pet-lite>
+- 📖 **开发日志 / 踩坑记录**：<https://lazymeow.pages.dev/wallpaper/blog>
+- 🐞 **问题反馈**：<https://github.com/alikaduobear-oss/pond-ripple-wallpaper/issues>
+
+## English
+
+**Pond Ripple Wallpaper** puts nothing but water on your desktop: the cursor leaves a trail of ripples, a click sends rings spreading outward. Real WebGL water simulation — no images, no video, no fish.
+
+> 🌊 **Get the ready-to-run build: <https://lazymeow.pages.dev/wallpaper>**
+> 🏠 **Product site: <https://lazymeow.pages.dev>**
+
+This repository is the **open-source source-code edition**. Highlights:
+
+- Embeds into the Windows desktop layer (`WorkerW`, *below* `SHELLDLL_DefView`) — icons stay visible and clickable
+- Fully click-through; never blocks the Start menu or icon double-clicks
+- Trails follow the cursor; left click sends expanding ripples
+- Completely transparent when calm — alpha is 0 until a ripple passes
+- Zero external assets: water is computed per-frame on the GPU (2D wave equation, ping-pong FBOs)
+
+```bash
+git clone https://github.com/alikaduobear-oss/pond-ripple-wallpaper.git
+cd pond-ripple-wallpaper
+npm install
+npm start
+```
+
+Windows 10/11 + Node.js 18 or later. There is no main window — exit from the tray icon menu.
+
+Sister project: [lazymeow-pet-lite](https://github.com/alikaduobear-oss/lazymeow-pet-lite) — the same developer's desktop pet, also open source.
 
 ## License
 
